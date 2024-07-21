@@ -5,7 +5,9 @@ import androidx.room.RoomDatabase
 
 @Database(
     entities = [MovieEntity::class],
-    version = 1
+    version = 1,
+    exportSchema = false // Deshabilitar la exportación del esquema
+
 )
 abstract class MovieDataBase : RoomDatabase() {
     abstract val movieDAO: MovieDAO
