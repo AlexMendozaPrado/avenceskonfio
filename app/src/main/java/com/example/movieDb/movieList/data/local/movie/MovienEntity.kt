@@ -22,5 +22,5 @@ data class MovieEntity(
 
 
     @PrimaryKey
-    val id: Int?,
+    val id: Int,
 )
